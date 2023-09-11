@@ -1,0 +1,57 @@
+[
+    {
+        "firstName":"Andrew",
+        "lastName":"Medvedev",
+        "userName":"AndrewNEW42",
+        "email":"email@gmail.com",
+        "password":"haha341209xc",
+        "activeAccount":true,
+        "imageList":[
+            {
+                "title":"Artwork title",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "author":{"firstName":"Andrew", "lastName":"Medvedev","userName":"AndrewNEW42"}
+            }
+        ]
+    },
+    {
+        "firstName":"Andrew1",
+        "lastName":"Medvedev1",
+        "userName":"AndrewNEW42x",
+        "email":"email@gmail.com",
+        "password":"haha341209xc",
+        "activeAccount":true,
+        "imageList":[
+            {
+                "title":"Artwork title",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "author":{"firstName":"Andrew1", "lastName":"Medvedev1","userName":"AndrewNEW42x"}
+            },
+            {
+                "title":"Artwork title2",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "author":{"firstName":"Andrew1", "lastName":"Medvedev1","userName":"AndrewNEW42x"}
+            },
+            {
+                "title":"Artwork title3",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "author":{"firstName":"Andrew1", "lastName":"Medvedev1","userName":"AndrewNEW42x"}
+            }
+        ]
+    },
+    {
+        "firstName":"Andrew2",
+        "lastName":"Medvedev2",
+        "userName":"AndrewNEW42z",
+        "email":"email@gmail.com",
+        "password":"haha341209xc",
+        "activeAccount":true,
+        "imageList":[
+            {
+                "title":"Artwork title",
+                "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "author":{"firstName":"Andrew2", "lastName":"Medvedev2","userName":"AndrewNEW42z"}
+            }
+        ]
+    }
+]
