@@ -1,9 +1,8 @@
-export{}
 const express = require('express')
 const router = express.Router()
 //CONTROLERS
 const {getAllImages, addImage, updateImage, removeImage} = require("../controlers/image-controls")
-const {getUserByUserName, getUser, loginUser, createUser, updateUser} = require("../controlers/user-controls")
+import {getUserByUserName, getUser, loginUser, createUser, updateUser} from "../controlers/user-controls"
 
 
 // REQUEST ROUTES

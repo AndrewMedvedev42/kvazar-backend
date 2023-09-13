@@ -4,7 +4,7 @@ const passwordValidation = /^\S+$/
 const UserModel = require("../models/user.model")
 
 //POSTS NEW USER INTO DATA BASE
-const createUser = async(req,res) => {
+export const createUser = async(req,res) => {
     try {
         const user = await UserModel.create(req.body)
         res.status(201).json({user})
@@ -14,7 +14,7 @@ const createUser = async(req,res) => {
 }
 
 //GETS USER FROM DATA BASE
-const getUser = async(req,res) => {   
+export const getUser = async(req,res) => {   
     try {
         const {id:Id} = req.params
 
@@ -28,7 +28,7 @@ const getUser = async(req,res) => {
     }
 }
 
-const getUserByUserName = async(req,res) => {
+export const getUserByUserName = async(req,res) => {
     try {
         const {username:userName} = req.params
         const user = await UserModel.findOne({userName:userName})
@@ -42,7 +42,7 @@ const getUserByUserName = async(req,res) => {
 }
 
 //GETS USER FROM DATA BASE BY EMAIL
-const loginUser = async(req,res) => {
+export const loginUser = async(req,res) => {
     try {
         const {email, password} = req.body
         if (email.match(emailValidation)) {
@@ -70,7 +70,7 @@ const loginUser = async(req,res) => {
 }
 
 //UPDATES USER IN DATA BASE
-const updateUser = async(req,res) => {
+export const updateUser = async(req,res) => {
     try {
         const {id:taskID} = req.params
         const user = await UserModel.findOneAndUpdate({_id:taskID},req.body,{
@@ -88,7 +88,7 @@ const updateUser = async(req,res) => {
 }
 
 //DELETES USER FROM DATA BASE
-const deleteUser = async(req,res) => {
+export const deleteUser = async(req,res) => {
     try {
         const {id:taskID} = req.params
         const user = await UserModel.findOneAndDelete({_id:taskID})
@@ -102,11 +102,3 @@ const deleteUser = async(req,res) => {
 }
 
 //EXPORT OF CONTROLERS
-module.exports = {
-    getUserByUserName,
-    createUser,
-    getUser,
-    loginUser,
-    updateUser,
-    deleteUser
-}

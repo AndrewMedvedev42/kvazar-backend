@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const fileupload = require("express-fileupload");
 const connectToDataBase = require('./db/connect.ts')
-const router = require('./routes/routes.ts')
+const router = require('./routes/routes')
 
 app.use(fileupload())
 
